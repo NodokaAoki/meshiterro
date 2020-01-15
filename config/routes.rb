@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'post_images#index' # ログイン認証後、投稿画像一覧画面を表示
-  resources :post_images, only: [:new, :create, :index, :show] do #生成するルーティングを限定
+  resources :post_images, only: [:new, :create, :index, :show, :destroy] do #生成するルーティングを限定
   	resource :favorites, only: [:create, :destroy] #いいね機能
   	resource :post_comments, only: [:create, :destroy]
   end
