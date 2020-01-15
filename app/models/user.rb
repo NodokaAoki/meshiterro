@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :post_images, dependent: :destroy #PostImageモデルとの関連付け
   has_many :post_comments, dependent: :destroy #PostCommentモデルとの関連付け
   has_many :favorites, dependent: :destroy #いいね機能
+  attachment :profile_image #画像アップ(プロフィール画像)
 end
