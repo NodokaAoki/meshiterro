@@ -68,4 +68,4 @@ gem 'refile', require: "refile/rails", github: 'manfe/refile'
 # refile-mini_magick(画像リサイズgem)
 gem "refile-mini_magick"
 # kaminari(ページングgem)
-gem 'kaminari','~> 1.1.1'
+gem 'kaminari','~> 1.2.1'
